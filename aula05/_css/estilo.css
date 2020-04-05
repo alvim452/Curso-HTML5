@@ -1,41 +1,42 @@
 body {
-    background-color: hsla(165, 81%, 93%, 0.5);
-    color:rgba(0, 0, 0, 1) ;
+    background-color: hsla(165, 81%, 93%, 0.5); /* cor de fundo*/
+    color:rgba(0, 0, 0, 1) ; /* cor das letras*/
 }
 
-p {
-   text-align: justify;
-   text-indent: 50px;
+p {   /* formatação de todos os paragrafos*/
+text-align: justify;  /*texto justificado direita e esquerda*/
+   text-indent: 50px; /*inicio de cada paragrafo 50 px á direita*/
 }
 
-/*formatação de imagens com legenda*/
+/*Daqui para baixo, formatação de imagens com legenda*/
 
-figure.foto-legenda
- {
-     /*position: relative;*/
-     border: 8px solid white;
-     box-shadow: 1px 1px 4px black;
+figure.foto-legenda criei uma classe foto-legenda dentro TAG figure na pagina principal do codigo HTML
+{
+     position:relative; /* objecto container(FIGURE)posição relativa ao lugar em que aparece no codigo HTML*/
+     border: 8px solid white; /* criar uma borda branca, dentro da imagem*/
+     box-shadow:1px 1px 4px black; /* criar sombra preta na borda imagem*/
+     /*display: inline-block;*/
  }
-figure.foto-legenda img
+figure.foto-legenda img /* criar um estilo imagem*/
  {
- width: 100%;
- height: 100%;
+    width: 600px;       /*A imagem estava maior que largura da borda, com este comando, vai FICAR DENTRO INTERFACE */
+    height: 338px;      /* tudo que tiver dentro da imagem, altura da borda,vai aumentar ou diminuir  com a imagem FICANDO DENTRO DA INTERFACE*/
  }
-figure.foto-legenda figcaption
+figure.foto-legenda figcaption /*criar um estilo legenda*/
  {
-    opacity: 0;
-   /* position: absolute;*/
+    opacity: 0; /* vai esconder a legenda*/
+    /*position:absolute; /* ocupar uma posição absoluta dentro do container que é o figure*/
     top: 0px;
-    background-color:rgba(0, 0, 0, .4);
-    color: white;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    transition: opacity 1s;
+    background-color:rgba(0, 0, 0, 0.4); /* cor fundo legenda com 0.4 de transparencia*/
+    color:white; /* cor das letras legenda*/
+    width:600px;  /*a transparencia ficar a ocupar toda a imagem- largura*/
+    height:338px;/*a transparencia ficar a ocupar toda a imagem- altura*/
+    padding: 30px; /* criar um espaço dentro da legenda*/
+    box-sizing:border-box; /* vai criar uma box dentro da borda*/
+    transition:opacity 2s; /* tempo de transição entre a legenda passar de invisivel a visivel */
  }
-figure.foto-legenda :hover figcaption
+figure.foto-legenda:hover figcaption/* quando passar o mouse por cima da imagem(figure.foto-legenda) a legenda (figcaptation) vai ficar visivel*/
  {
- opacity: 1;
+ opacity:1; /* vai mostrar a legenda ou tornar visivel a legenda*/
 }
  
