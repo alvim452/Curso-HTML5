@@ -40,8 +40,8 @@ figure.foto-legenda:hover figcaption/* quando passar o mouse por cima da imagem(
  opacity:1; /* vai mostrar a legenda ou tornar visivel a legenda*/
 }
  /* FORMATAÇÃO DO MENU*/
- nav#menu{
-    display: block; /*menu como um bloco unico*/
+ nav#menu{ /* sempre que nav tenhaum id colcamosum #*/
+    display: block; /*mostrar o menu como um bloco unico*/
  }
 
  nav#menu ul{
@@ -53,9 +53,23 @@ figure.foto-legenda:hover figcaption/* quando passar o mouse por cima da imagem(
  }
 nav#menu li{
    display:inline-block;
-   background-color:#dddddd;
+   background-color:#dddddd; /* cor cinzenta*/
    padding: 10px;
    margin: 2px;
+   transition: background-collor 1s; /* duração do efeito de transição*/
+}
+nav#menu li :hover{
+   background-color: #606060;/*efeito qd passar rato por cima os itens da lista fiacm cinzentos*/
 }
 nav#menu h1{
    display: none;
+}
+nav#menu a { /* todo o nav que tenha um id menu e que tenha ancora (a)*/
+   color: black; /* a cor das letras passa +para preto*/
+   text-decoration: none; /* deixa de ter qualquer efeito, neste caso o sublinhado*/
+}
+ nav#menu a:hover{ /* todo nav com o id menu que tenha link (a-ancora) e efeito hover passar rato por cima*/
+    color: white; /* vou mudar a cor da letra*/
+    text-decoration: underline; /* o texto fique sublinhado*/
+ }
+
