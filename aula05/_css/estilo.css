@@ -14,8 +14,8 @@ p {   /* formatação de todos os paragrafos*/
 text-align: justify;  /*texto justificado direita e esquerda*/
    text-indent: 50px; /*inicio de cada paragrafo 50 px á direita*/
 }
- 
-header#cabecalho img {
+ /* posicionamento da imagem oculos pequenos*/
+header#cabecalho img#icone { 
    position: absolute;
    left: 780px;
    top: 40px;
