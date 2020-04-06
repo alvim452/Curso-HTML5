@@ -1,11 +1,25 @@
 body {
-    background-color: hsla(165, 81%, 93%, 0.5); /* cor de fundo*/
+    background-color:#dddddd; /* cor de fundo*/
     color:rgba(0, 0, 0, 1) ; /* cor das letras*/
+}
+div#interface{ /* formatar div#interface*/
+   width: 900px;/* a uma largura de 800px*/
+   background-color: #ffffff; /* cor fundo interface*/
+   margin: -20px auto 0px auto; /* formatação autoamatica margens esq e dta*/
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);/*criar sombra volta objecto div*/
+   padding: 10px 10px 10px 10px;
 }
 
 p {   /* formatação de todos os paragrafos*/
 text-align: justify;  /*texto justificado direita e esquerda*/
    text-indent: 50px; /*inicio de cada paragrafo 50 px á direita*/
+}
+ 
+header#cabecalho img {
+   position: absolute;
+   left: 780px;
+   top: 40px;
+
 }
 
 /*Daqui para baixo, formatação de imagens com legenda*/
