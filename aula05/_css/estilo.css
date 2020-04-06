@@ -14,12 +14,32 @@ p {   /* formatação de todos os paragrafos*/
 text-align: justify;  /*texto justificado direita e esquerda*/
    text-indent: 50px; /*inicio de cada paragrafo 50 px á direita*/
 }
+
  /* posicionamento da imagem oculos pequenos*/
-header#cabecalho img#icone { 
+header#cabeçalho img#icone { 
    position: absolute;
    left: 780px;
-   top: 40px;
-
+   top: 70px;
+}
+border#cabeçalho{ 
+   border-bottom: 1px #606060 solid; /* criar uma linha solida para separar o cabeçalho*/
+   height: 150px;
+   background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; /* background sem repetir a imagem e defeninndo a posição desl lat e desl vertical*/
+}
+header#cabeçalho h1{
+   font-family: Arial, sans-serif;
+   font-size: 30pt;
+   color: #606060;
+   text-shadow: 1ex 1px 1px rgba(0, 0, 0, 0.6);
+   padding: 0px;
+   margin-bottom: 0px;
+}
+header#cabeçalho h2{
+   font-family: Arial, sans-serif;
+   color: #888888;
+   font-size: 15pt;
+   padding: 0px;
+   margin-top: 0px;
 }
 
 /*Daqui para baixo, formatação de imagens com legenda*/
