@@ -113,4 +113,21 @@ nav#menu a { /* todo o nav que tenha um id menu e que tenha ancora (a)*/
     color: white; /* vou mudar a cor da letra*/
     text-decoration: underline; /* o texto fique sublinhado*/
  }
-
+  section#corpo{
+     display: block;         /* display aparecer como um bloco*/
+     width: 520px;          /* largura do  bloco*/
+     float: left;    /* para o bloco flutuar no lado direito da pagina*/
+     border-right: 1px solid #606060;    /* criei uma borda ou moldura no lado direito da section*/
+  }
+  aside#lateral{
+     display: block;       /* display aparecer como um bloco*/
+     width: 350px;        /* largura do  bloco*/
+     float: right; /*para o bloco flutuar no lado esquerdo da pagina*/ 
+  }
+footer#rodape{
+   clear: both;/* para limpar os floats dos dois blocos anteriores*/
+   border-top: 1px solid #606060; /* vou criar uma borda ou moldura no cimo do bloco rodape*/
+}
+footer#rodape p{
+   text-align: center; /* vou alinhar ao centro da pagina, o texto do rodape ou footer*/
+}
