@@ -113,6 +113,20 @@ nav#menu a { /* todo o nav que tenha um id menu e que tenha ancora (a)*/
     color: white; /* vou mudar a cor da letra*/
     text-decoration: underline; /* o texto fique sublinhado*/
  }
+
+ /* vamos formatar uma tabela*/
+
+ table#tabelaspec { /* vamos criar uma borda á volta de toda a tabela*/
+    border: 1px solid #606060;
+    border-spacing: 0px;/* vai definir o espaço entre as celulas*/
+    margin-left: auto;
+    margin-right: auto;
+ }
+ table#tabelaspec td{
+    border: 1px solid #606060; /* vamos criar uma borda á volta de cad uma das celulas*/
+    padding: 10px;
+    
+ }
   section#corpo{
      display: block;         /* display aparecer como um bloco*/
      width: 520px;          /* largura do  bloco*/
