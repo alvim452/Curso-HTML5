@@ -114,19 +114,44 @@ nav#menu a { /* todo o nav que tenha um id menu e que tenha ancora (a)*/
     text-decoration: underline; /* o texto fique sublinhado*/
  }
 
- /* vamos formatar uma tabela*/
+ /* Daqui para baixo, vamos formatar uma tabela*/
 
  table#tabelaspec { /* vamos criar uma borda á volta de toda a tabela*/
     border: 1px solid #606060;
-    border-spacing: 0px;/* vai definir o espaço entre as celulas*/
-    margin-left: auto;
-    margin-right: auto;
+    border-spacing: 0px;/*vai definir o espaço entre as celulas, as margens das celulas*/
+    margin-left: auto; /*centralizar as celulas*/
+    margin-right: auto;/*centralizar as celulas*/
  }
  table#tabelaspec td{
     border: 1px solid #606060; /* vamos criar uma borda á volta de cad uma das celulas*/
-    padding: 10px;
-    
+    padding: 10px;/* vamos criar espaço dentro das celulas*/
  }
+ table#tabelaspec td.ce{
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;/* letras em bold*/
+    text-align: right; /* vamos alinhar o texto a direita*/
+ }
+ table#tabelaspec td.cd{
+    background-color: #cecece;
+    text-align: left; /* vamos alinhar texto á esquerda*/
+ }
+ table#tabelaspec caption{/* formatação das legendas*/
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+ }
+ table#tabelaspec caption span{/*formatação legenda parte flutuante(span)*/
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+ }
+
+
+ /* Daqui para baixo, vamos criar corpo lateral e radapé*/
   section#corpo{
      display: block;         /* display aparecer como um bloco*/
      width: 520px;          /* largura do  bloco*/
