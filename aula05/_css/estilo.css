@@ -6,6 +6,7 @@
 }
 
 body {
+   font-family: Arial, sans-serif;
     background-color:#dddddd; /* cor de fundo*/
     color:rgba(0, 0, 0, 1) ; /* cor das letras*/
 }
@@ -20,6 +21,13 @@ div#interface{ /* formatar div#interface*/
 p {   /* formatação de todos os paragrafos*/
 text-align: justify;  /*texto justificado direita e esquerda*/
    text-indent: 50px; /*inicio de cada paragrafo 50 px á direita*/
+}
+a {
+   color: #606060;
+   text-decoration: none;
+}
+a:hover{
+   text-decoration: underline;
 }
 
  /* posicionamento da imagem oculos pequenos*/
@@ -42,7 +50,7 @@ header#cabeçalho h1{
    margin-bottom: 0px;      /* criar  um espaço externo no h1*/
 }
 header#cabeçalho h2{
-   font-family: 'Titillium Web', sans-serif;; /*defenir o tipo letra titulo h2 fui buscar fonte personalizavel ao goggle 2º linha de codigo topo desta folha de estilos*/
+   font-family: 'FontLogo', sans-serif;; /*defenir o tipo letra titulo h2 fui buscar fonte personalizavel ao goggle 2º linha de codigo topo desta folha de estilos*/
    color: #888888;      /*defenir a cor da letra titulo h2*/
    font-size: 15pt;     /*defenir o tamanho da letra titulo h2*/
    padding: 0px;         /*   criar espaço interno no h2*/
@@ -113,6 +121,37 @@ nav#menu a { /* todo o nav que tenha um id menu e que tenha ancora (a)*/
     color: white; /* vou mudar a cor da letra*/
     text-decoration: underline; /* o texto fique sublinhado*/
  }
+/* daqui para baixo, vamos formatar article*/
+
+ article#noticia-principal h2 { /* vamos formatar todo os titulos h2*/
+font-size: 13pt;
+color: #606060;
+background-color: #dddddd;
+padding: 5px 0px 5px 10px;
+margin: 10px 0px 10px 0px;
+ }/* vamos ao html tornamos h2:data lançamento, especificações tecnicas,como funciona, o que voçê pode fazer com o google-glass*/
+ header#cabecalho-artigo h1{
+    font-family:"FontLogo", sans-serif ;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+ }
+ .direita{
+    text-align: right;
+ }
+ header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+
+ }
+ header#cabecalho-artigo h3{
+  font-size: 12px ;
+  color: #606060; 
+
+ }
 
  /* Daqui para baixo, vamos formatar uma tabela*/
 
@@ -154,7 +193,7 @@ nav#menu a { /* todo o nav que tenha um id menu e que tenha ancora (a)*/
  /* Daqui para baixo, vamos criar corpo lateral e radapé*/
   section#corpo{
      display: block;         /* display aparecer como um bloco*/
-     width: 520px;          /* largura do  bloco*/
+     width: 500px;          /* largura do  bloco*/
      float: left;    /* para o bloco flutuar no lado direito da pagina*/
      border-right: 1px solid #606060;    /* criei uma borda ou moldura no lado direito da section*/
   }
@@ -162,6 +201,23 @@ nav#menu a { /* todo o nav que tenha um id menu e que tenha ancora (a)*/
      display: block;       /* display aparecer como um bloco*/
      width: 350px;        /* largura do  bloco*/
      float: right; /*para o bloco flutuar no lado esquerdo da pagina*/ 
+     background-color:#dddddd ;
+     padding: 10px;
+     margin-top: 10px;
+     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  aside#lateral h1{/* vamos formatar os titulos h1 dentro do ASIDE*/
+     font-family: "FontLogo", sans-serif;
+     font-size: 20pt;
+     color: #606060;
+     margin-top: 0px;
+     
+  }
+  aside#lateral h2 {
+     background-color: #606060;
+     font-size: 13pt;
+     color: #ffffff;
+     padding: 5px;
   }
 footer#rodape{
    clear: both;/* para limpar os floats dos dois blocos anteriores*/
