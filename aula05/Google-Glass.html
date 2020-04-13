@@ -10,6 +10,7 @@
         
 
 </head>
+<script type="text/javascript" src="_javascript/funcoes.js"></script>
 <body>
     <div id="interface">           /*criei uma divisoria*/
 
@@ -21,14 +22,14 @@
 
      <img id="icone" src="_imagens\glass-oculos-preto-peq.png"> /*introduzi uma imagem que esta na pasta_imagens eo ficheiro é glass-oculos-preto-peq*/
       
-    <nav id="menu">                    /*criei uma area de navegação*/
+    <nav id="menu">               /*criei uma area de navegação*/
         <h1>Menu Principal </h1>
         <ol>                  /*vou criar uma lista ordenada*/
-               <li><a href="Google-Glass.html">Home</a></li> /*vou criar os itens da lista*/
-               <li> <a href="specs.html"> Especificações</a></li>
-               <li><a href="fotos.html"> Fotos</a></li>
-               <li><a href="multimidia.html"> Multimídia</a></li> 
-               <li><a href="fale-conosco.html">Fale conosco</a> </li> 
+               <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="Google-Glass.html">Home</a></li> /*vou criar os itens da lista*//*aula 25, mudar a imagem com javaScript*/
+               <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')" > <a href="specs.html"> Especificações</a></li>
+               <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html"> Fotos</a></li>
+               <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="multimidia.html"> Multimídia</a></li> 
+               <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale conosco</a> </li> 
         </ol>
      </nav>
      </header>
@@ -94,10 +95,10 @@
                 
      <p> Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360 pixels de resolução que, em proporção, equivaleria a um monitor de 25 polegadas de alta definição colocado a 2,5 metros de distância do espectador.</p> 
 </aside>   
-<footer></footer>  
+<footer id="rodape">  
      <p> Copyright &copy;2013 - by Gustavo Guanabara <br/> <a href="http://facebook.com/cursosemvideo" target="blanck">Facebook
      </a>  <a href="http://twiter.com/cursosemvideo" target="blanck">Twitter</a>| </p>  /* criei hiperligaçoes as paginas do facebook e do twiter*/
 </footer>
-    </div>
+</div>
 </body>
 </html>
