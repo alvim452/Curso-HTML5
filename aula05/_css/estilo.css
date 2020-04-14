@@ -196,6 +196,7 @@ margin: 10px 0px 10px 0px;
      width: 500px;          /* largura do  bloco*/
      float: left;    /* para o bloco flutuar no lado direito da pagina*/
      border-right: 1px solid #606060;    /* criei uma borda ou moldura no lado direito da section*/
+     padding-right: 15px;
   }
   aside#lateral{
      display: block;       /* display aparecer como um bloco*/
